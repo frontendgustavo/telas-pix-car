@@ -1,0 +1,354 @@
+@media screen and (min-width:1441px) {
+    .full-width {
+        max-width: 1220px;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding: 0 32px;
+    }
+}
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+@media screen and (max-width:1024px) {
+    .container {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+}
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+@media screen and (max-width:550px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+@media screen and (max-width:475px) {
+
+    .btn-start {
+        padding: 16px 32px;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    /* FORM LOGIN */
+    .login-form {
+        padding: 0px;
+        padding-top: 16px;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+    @-webkit-keyframes fade-in-bottom {
+        0% {
+            -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade-in-bottom {
+        0% {
+            -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+
+    .login-form input {
+        width: auto;
+        margin: 6px 16px;
+    }
+
+    .modal-mobile {
+        position: fixed;
+        left: 5px;
+        margin: 0;
+        bottom: 0;
+        right: 5px;
+    }
+
+    .btn-logar {
+        width: auto;
+        bottom: 0px;
+        position: relative;
+        border-radius: 0;
+        border: none;
+        border-top: 3px solid #fff;
+        margin-top: 16px;
+    }
+
+    .close-btn-login {
+        border: 3px solid #fff;
+        right: -3px;
+        border-radius: 5px 5px 0 5px;
+    }
+
+    /* FORM SIGN IN */
+    .sign-in-form {
+        padding: 0px;
+        padding-top: 24px;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        margin: 0;
+    }
+
+    .sign-in-form input {
+        width: auto;
+        margin: 6px 16px;
+        padding: 10px;
+    }
+
+    .close-btn-sign-in {
+        border: 3px solid #fff;
+        right: -3px;
+        border-radius: 5px 5px 0 5px;
+    }
+
+    .box-input-check {
+        padding: 16px;
+    }
+
+    .btn-cadastrar {
+        width: auto;
+        bottom: 0px;
+        position: relative;
+        border-radius: 0;
+        border: none;
+        border-top: 3px solid #fff;
+        margin-top: 16px;
+    }
+}
+
+
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+@media screen and (max-width:425px) {
+    .brand-dashboard img {
+        width: 60px;
+    }
+
+    .btn-menu img {
+        cursor: pointer;
+        width: 30px;
+    }
+
+    .money-info p {
+        color: #fff;
+        font-weight: 900;
+        margin: 0;
+        padding: 3px;
+        padding-right: 10px;
+        padding-left: 12px;
+        transform: skew(12deg, 0deg);
+        font-size: .9em;
+    }
+
+    .box-items-menu {
+        padding: 0;
+    }
+
+    .add-money img {
+        width: 28px;
+    }
+
+    .container-game {
+        padding: 16px;
+    }
+
+    .box-footer p {
+        font-weight: 900;
+        font-size: .9em;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    .box-footer a {
+        font-weight: 900;
+        font-size: .8em;
+        padding: 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* MODALS */
+    .brand-dashboard-modal img {
+        width: 80px;
+    }
+
+    .title-modal {
+        margin: 24px 0;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .modal-dashboard {
+        padding: 0;
+        width: 100%;
+    }
+    .btn-add-value-money {
+        width: 95%;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 10px;
+        font-size: 1.3em;
+        font-weight: 900;
+        outline: 3px solid #fff;
+        background-color: #3ecb77;
+    }
+
+    .others-values {
+        margin: 8px 0;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 900;
+    }
+
+    .btn-close-add-money {
+        position: absolute;
+        background-color: #f20c39;
+        padding: 2px 6px;
+        top: 50px;
+        right: 10px;
+        outline: 3px solid #fff;
+        font-weight: 900;
+        border-radius: 3px;
+    }
+
+    /* MODAL WITHDRAE MONEY */
+    .info-money {
+        font-size: 1em;
+        padding: 8px 10px;
+    }
+    .btn-close-withdraw-money {
+        position: absolute;
+        background-color: #f20c39;
+        padding: 6px 10px;
+        top: -18px;
+        right: 0px;
+        outline: 3px solid #fff;
+        font-weight: 900;
+        border-radius: 5px 5px 0px 5px;
+    }
+    .btn-solicitar-saque {
+        font-size: 1em;
+        bottom: -8px;
+        width: 100%;
+        border-radius:0;
+        outline: none;
+        border-top: 3px solid #fff;
+        padding: 8px 0;
+    }
+    .box-input-withdraw-money label {
+        font-size: 1em;
+    }
+    .form-modal-withdraw-money {
+        padding-bottom:20px ;
+        border-radius: 10px 10px 0 0;
+    }
+    /* MODAL PROFILE */
+    .modal-profile {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .form-modal-profile h2 {
+        font-size: 1.2em;
+        padding: 0;
+        margin: 0;
+        margin-top: 16px;
+    }
+    .box-input-profile {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .form-modal-profile {
+     border-radius: 10px 10px 0 0;
+    }
+    .box-modal {
+        width: 100%;
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .btn-close-profile {
+        right: 0;
+        border-radius: 5px 5px 0px 5px;
+    }
+    .btn-gravar-alteracoes {    
+        bottom: -8px;
+        position: absolute;
+        width: 100%;
+        border-top: 3px solid #fff;
+        border-radius:0px ;
+        outline: none;
+        padding: 8px 0;
+    }
+}
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+@media screen and (max-width:374px) {
+    .box-input-withdraw-money label {
+        font-size: .9em;
+    }
+    .info-money {
+        font-size: .8em;
+    }
+}
