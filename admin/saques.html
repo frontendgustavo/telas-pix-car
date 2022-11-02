@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 
-    <link rel="stylesheet" href="css/toastify.min.css">
-
-    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
     <title>Dashboard</title>
 </head>
 
@@ -189,104 +187,53 @@
                 </path>
             </g>
         </svg>
-    </section> 
+    </section>
+
+
     <header class="header-dashboard container full-width">
         <nav class="flex flex-between flex-align-center">
             <section class="brand-dashboard">
-                <img src="imgs/logo.svg" alt="">
+                <img src="../imgs/logo.svg" alt="">
             </section>
             <ul class="flex flex-between flex-align-center box-items-menu">
-                <section class="box-items-value-add flex flex-between flex-align-center">
-                    <li>
-                        <button class="btn-menu add-money btn-add-money">
-                            <img src="imgs/icon-add-money.svg" alt="">
-                        </button>
-                    </li>
-                    <li class="money-info">
-                        <p>R$230,00</p>
-                    </li>
-                </section>
                 <li>
-                    <button class="btn-menu btn-withdraw-money">
-                        <img src="imgs/icon-money.svg" alt="">
-                    </button>
-                </li>
-                <li>
-                    <button class="btn-menu btn-profile">
-                        <img src="imgs/icon-profile.svg" alt="">
+                    <button class="btn-menu btn-logout">
+                        <img src="../imgs/icon-logout.svg" alt="">
                     </button>
                 </li>
             </ul>
         </nav>
     </header>
-    <main class="main-dashboard">
-        <section class="container-game flex flex-align-center flex-center">
-            <section class="box-game">
-                <img src="imgs/img-game.png" alt="">
+    <main class="main-dashboard container full-width">
+        <section class="container-box-search-add-users">
+            <section class="box-search-add-users flex flex-align-center">
+                <section class="input-search flex flex-align-center">
+                    <button class="img-input-search">
+                        <img src="../imgs/icon-search.svg" alt="">
+                    </button>
+                    <input type="text" placeholder="ID / e-mail pagamento">
+                </section>
             </section>
         </section>
-        <!-- MODAIS -->
-        <!-- Add money -->
-        <dialog class="modal-dashboard fade-in modal-add-money">
-            <section class="flex flex-column flex-center flex-align-center">
-                <section class="brand-dashboard-modal">
-                    <img src="imgs/logo.svg" alt="">
-                </section>
-                <h2 class="title-modal">Quanto você deseja adicionar?</h2>
-                <section class="list-values flex flex-column flex-center flex-align-center w-100">
-                    <button class="btn-add-value-money">R$ 30,00</button>
-                    <button class="btn-add-value-money">R$ 50,00</button>
-                    <button class="btn-add-value-money">R$ 100,00</button>
-                    <button class="btn-add-value-money">R$ 150,00</button>
-                    <input class="input-add-value-money money-input" placeholder="Insira o valor desejado">
-                </section>
-            </section>
-            <button class="btn-close-add-money">X</button>
-        </dialog>
-        <!-- End -->
-        <!-- WithDraw money -->
-        <dialog class="modal-dashboard fade-in modal-withdraw-money">
-            <section class="flex flex-column flex-center flex-align-center box-modal">
-                <section class="brand-dashboard-modal">
-                    <img src="imgs/logo.svg" alt="">
-                </section>
-                <form class="flex flex-column flex-center flex-align-center form-modal-withdraw-money">
-                    <h2>Solicitar Saque</h2>
-                    <article class="info-money">Disponível Total: R$ 100,00</article>
-                    <article class="info-money">Disponível Saque: R$ 60,00</article>
-                    <section class="box-input-withdraw-money">
-                        <label for="">Qual valor deseja sacar?</label>
-                        <input type="text" placeholder="R$ 00,00" class="money-input">
-                    </section>
-                    <button type="reset" class="btn-close-withdraw-money">X</button>
-                    <button type="submit" class="btn-solicitar-saque">Solicitar Saque</button>
-                </form>
-            </section>
-        </dialog>
-        <!-- End -->
-        <!-- Profile -->
-        <dialog class="modal-dashboard fade-in modal-profile">
-            <section class="flex flex-column flex-center flex-align-center box-modal">
-                <section class="brand-dashboard-modal">
-                    <img src="imgs/logo.svg" alt="">
-                </section>
-                <form class="flex flex-column flex-center flex-align-center form-modal-profile">
-                    <h2>Editar seu cadastro!</h2>
-                    <section class="box-input-profile">
-                        <input type="text" disabled value="Givanildo Oliveira">
-                        <input type="email" disabled value="givanildo@gmail.com">
-                        <input type="text" disabled value="123.654.987-41">
-                        <input type="tel" value="(11) 99999-9999">
-                        <input type="text" value="Meu Pix">
-                        <input type="password" value="" placeholder="Digite sua senha antiga:">
-                        <input type="password" value="" placeholder="Digite sua nova senha:">
-                    </section>
-                    <button type="reset" class="btn-close-profile">X</button>
-                    <button type="submit" class="btn-gravar-alteracoes">Gravar Alterações</button>
-                </form>
-            </section>
-        </dialog>
-        <!-- End -->
+        <section class="container-table">
+            <table style="width:100%">
+                <tr class="gray">
+                    <td>E-mail</td>
+                    <td>Valor solicitado</td>
+                    <td>Valor diário</td>
+                    <td>Valor em conta</td>
+                    <td>Ações</td>
+                </tr>
+                <tr class="gray-dark">
+                    <td>joao@gmail.com</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 100,00</td>
+                    <td>R$ 100,00</td>
+                    <td>Editar / Deletar</td>
+                </tr>
+            </table>
+        </section>
+
     </main>
 
     <footer class="flex flex-center flex-align-center">
@@ -296,49 +243,9 @@
         </section>
     </footer>
 
-    <script src="js/load.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/toastify-js.js"></script>
-    
-    <script src="js/main-dashboard.js"></script>
-    <script>
-
-
-        // // TOASTIFY PARA QUANDO O RETORNO FOR ALERT/WARNING
-        // Toastify({
-        //     text: "Algo não está certo.",
-        //     duration: 1500000,
-        //     gravity: "top", // `top` or `bottom`
-        //     position: 'right',
-        //     style: {
-        //         background: "linear-gradient(to right, #F3B62F, #F3B62F)",
-        //     },
-        // }).showToast();
-
-        //  // TOASTIFY PARA QUANDO O RETORNO FOR SUCCECSS
-        // Toastify({
-        //     text: "Feito com sucesso",
-        //     duration: 1500000,
-        //     gravity: "top", // `top` or `bottom`
-        //     position: "right", // `left`, `center` or `right`
-        //     style: {
-        //         background: "linear-gradient(to right, #3ecb77, #3ecb77)",
-        //     },
-        // }).showToast();
-
-
-
-        //  // TOASTIFY PARA QUANDO O RETORNO FOR ERROR
-        // Toastify({
-        //     text: "Deu ruim!",
-        //     duration: 1500000,
-        //     gravity: "top", // `top` or `bottom`
-        //     position: "right", // `left`, `center` or `right`
-        //     style: {
-        //         background: "linear-gradient(to right, #F20C39, #F20C39)",
-        //     },
-        // }).showToast();
-    </script>
+    <script src="../js/load.js"></script>
+    <script src="../js/main-admin.js"></script>
+    <script src="../js/jquery.mask.min.js"></script>
 </body>
 
 </html>

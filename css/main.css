@@ -27,6 +27,18 @@ ul {
     list-style: none;
 }
 
+.h-100vh {
+    height: 100vh;
+}
+
+.gray {
+    color: #8F97A3;
+}
+
+.gray-dark {
+    color: #454B54;
+}
+
 .pre-loader {
     background-color: #1E1E1E;
     display: flex;
@@ -136,6 +148,13 @@ button {
     background-position: center;
 }
 
+.modal-2::backdrop {
+    background-color: #121212 !important;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+
 .modal {
     width: 100%;
     background-color: transparent;
@@ -154,35 +173,40 @@ button {
     -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+
 .fade-out {
     -webkit-animation: fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: fade-out-bck 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 @-webkit-keyframes fade-out-bck {
     0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: translateZ(-80px);
-              transform: translateZ(-80px);
-      opacity: 0;
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
     }
-  }
-  @keyframes fade-out-bck {
+}
+
+@keyframes fade-out-bck {
     0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: translateZ(-80px);
-              transform: translateZ(-80px);
-      opacity: 0;
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
     }
-  }
-  
+}
+
 .open-modal-sign-in::-webkit-scrollbar {
     background-color: transparent;
 }
@@ -368,7 +392,6 @@ button {
 
 .bg-dashboard {
     background-color: #1E1E1E;
-    ;
     background-image: url(../imgs/bg-dashboard.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -430,33 +453,40 @@ button {
 .container-game {
     padding: 64px;
 }
+
 .box-game img {
     width: 100%;
 }
 
 /* MODALS */
-.brand-dashboard-modal img{
+.brand-dashboard-modal img {
     width: 120px;
 }
+
 .modal-dashboard {
-    background-color:transparent;
+    background-color: transparent;
     border: none;
     color: #fff;
 }
+
 .modal-dashboard::backdrop {
     background-color: rgba(0, 0, 0, 0.9);
 }
+
 .modal-dashboard::-webkit-scrollbar {
     background-color: transparent;
 }
+
 /* MODAL ADD MONEY */
-.title-modal{
-   margin: 24px 0 ;
-   text-align: center;
+.title-modal {
+    margin: 24px 0;
+    text-align: center;
 }
+
 .w-100 {
     width: 100%;
 }
+
 .btn-add-value-money {
     width: 95%;
     padding: 16px;
@@ -464,9 +494,28 @@ button {
     border-radius: 10px;
     font-size: 1.5em;
     font-weight: 900;
-    outline:  3px solid #fff;;
+    outline: 3px solid #fff;
     background-color: #3ecb77;
 }
+
+.input-add-value-money {
+    width: 85%;
+    border: none;
+    text-decoration: none;
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: 900;
+    outline: 3px solid #fff;
+    background-color: #3ecb77;
+    color: #fff;
+    text-align: center;
+}
+.input-add-value-money::placeholder {
+    color: #Fff;
+}
+
 .others-values {
     margin: 8px 0;
     text-decoration: none;
@@ -474,6 +523,7 @@ button {
     font-size: 1.1em;
     font-weight: 900;
 }
+
 .btn-close-add-money {
     position: absolute;
     background-color: #f20c39;
@@ -489,6 +539,7 @@ button {
 .modal-withdraw-money {
     height: 100%;
 }
+
 .form-modal-withdraw-money {
     background-color: #f20c39;
     padding: 0 32px;
@@ -497,7 +548,8 @@ button {
     position: relative;
     margin-top: 16px;
 }
-.info-money { 
+
+.info-money {
     text-align: center;
     max-width: 400px;
     padding: 4px 16px;
@@ -505,9 +557,11 @@ button {
     border-radius: 10px;
     font-size: 1.3em;
     font-weight: 900;
-    outline:  3px solid #fff;;
+    outline: 3px solid #fff;
+    ;
     background-color: #3ecb77;
 }
+
 .box-input-withdraw-money {
     border-top: 2px solid #fff;
     display: flex;
@@ -517,12 +571,14 @@ button {
     margin: 12px 0;
     padding-bottom: 24px;
 }
-.box-input-withdraw-money label{
+
+.box-input-withdraw-money label {
     font-size: 1.1em;
     font-weight: 900;
     margin: 8px 0;
 }
-.box-input-withdraw-money input{
+
+.box-input-withdraw-money input {
     font-weight: 900;
     padding: 8px 12px;
     width: 93%;
@@ -532,10 +588,12 @@ button {
     border: none;
     appearance: none;
 }
+
 .form-modal-withdraw-money h2 {
     margin: 16px 0;
     font-weight: 900;
 }
+
 .btn-close-withdraw-money {
     position: absolute;
     background-color: #f20c39;
@@ -546,6 +604,7 @@ button {
     font-weight: 900;
     border-radius: 5px 5px 5px 5px;
 }
+
 .btn-solicitar-saque {
     text-align: center;
     width: 85%;
@@ -556,7 +615,8 @@ button {
     border-radius: 5px;
     font-size: 1.3em;
     font-weight: 900;
-    outline:  3px solid #fff;;
+    outline: 3px solid #fff;
+    ;
     background-color: #3ecb77;
 }
 
@@ -564,6 +624,7 @@ button {
 .modal-profile {
     height: 100%;
 }
+
 .form-modal-profile {
     background-color: #f20c39;
     padding: 0 32px;
@@ -581,7 +642,8 @@ button {
     margin: 12px 0;
     padding-bottom: 24px;
 }
-.box-input-profile input{
+
+.box-input-profile input {
     width: 100%;
     font-weight: 900;
     padding: 8px 12px;
@@ -592,13 +654,14 @@ button {
     border: none;
     appearance: none;
     margin: 5px 0;
-  
+
 }
 
 .form-modal-profile h2 {
     margin: 16px 0;
     font-weight: 900;
 }
+
 .btn-close-profile {
     position: absolute;
     background-color: #f20c39;
@@ -609,6 +672,7 @@ button {
     font-weight: 900;
     border-radius: 3px;
 }
+
 .btn-gravar-alteracoes {
     text-align: center;
     width: 85%;
@@ -619,27 +683,216 @@ button {
     border-radius: 5px;
     font-size: 1.1em;
     font-weight: 900;
-    outline:  3px solid #fff;;
+    outline: 3px solid #fff;
+    ;
     background-color: #3ecb77;
 }
+
 .box-input-profile input:disabled,
-.box-input-profile input[disabled]{
-  background-color: #fff;
-  color: #E2E2E2 !important;
+.box-input-profile input[disabled] {
+    background-color: #fff;
+    color: #E2E2E2 !important;
 }
 
+
+
+
+/* ###################### */
+/* ###################### */
+/* ###################### */
+/* ###################### */
+/* ###################### */
+/* ###################### */
+/* LOGIN - ADMIN */
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.431);
+}
+
+
+/* ######################## */
+/* ######################## */
+/* ######################## */
+/* ######################## */
+/* ######################## */
+/* DASHBOARD ADMIN */
+.total-faturado,
+.total-pago {
+    background-color: #121212;
+    border-radius: 10px;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 900;
+    margin-right: 16px;
+}
+
+.total-faturado p,
+.total-pago p {
+    margin: 0px;
+    padding: 12px 16px;
+}
+
+.total-faturado p:nth-child(1),
+.total-pago p:nth-child(1) {
+    background-color: red;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+.box-cards {
+    padding: 32px 0;
+}
+
+.card {
+    width: 100%;
+    color: #fff;
+    margin: 0;
+    background-color: #f20c39;
+    outline: 4px solid #fff;
+    padding: 32px;
+    border-radius: 15px;
+    margin-right: 32px;
+    font-size: 1.3em;
+    justify-content: space-between;
+    cursor: pointer;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+
+
+
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* ##################### */
+/* USERS */
+.container-box-search-add-users {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-add-user {
+    background-color: #3ecb77;
+    color: #fff;
+    padding: 12px 16px;
+    transform: skew(-20deg);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 32px;
+}
+
+.btn-add-user img {
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    transform: skew(20deg);
+    font-weight: 900;
+}
+
+.input-search {
+    background-color: #121212;
+    border-radius: 10px;
+    transform: skew(-20deg);
+}
+
+.img-input-search {
+    background-color: #f20c39;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-input-search img {
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    transform: skew(20deg);
+}
+
+.input-search input {
+    width: 170px;
+    padding: 12px;
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-weight: 900;
+}
+
+.input-search input::placeholder {
+    color: #fff;
+}
+
+.btn-criar-usuario {
+    cursor: pointer;
+    background-color: #3ecb77;
+    padding: 12px 16px;
+    position: absolute;
+    width: 370px;
+    bottom: -25px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 900;
+    font-family: 'Karibu', sans-serif !important;
+    font-style: italic;
+}
+
+.form-add-users input::placeholder {
+    color: rgb(216, 216, 216);
+}
+
+.modal::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.saque-form {
+    text-align: left;
+}
+
+.container-table {
+    padding: 32px 0;
+}
+
+.container-table table {
+    background-color: #121212;
+    color: #fff;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+.container-table table td {
+    padding: 15px;
+}
 
 
 /* FOOTER */
 footer {
     background-color: #121212;
     padding: 32px 0;
-    
+
 }
+
 .box-footer {
     text-align: center;
     color: #fff;
 }
+
 .box-footer p {
     font-weight: 900;
     font-size: 1.1em;
@@ -647,6 +900,7 @@ footer {
     margin: 0;
     margin-bottom: 8px;
 }
+
 .box-footer a {
     font-weight: 900;
     font-size: .9em;
